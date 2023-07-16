@@ -5,9 +5,10 @@ function NavBar() {
     return (
 
         <div class="Navbar">
-            <p>cc</p>
+            <p id="name">JOURDES <br></br>Baptiste</p>
 
-            <span>resumé</span>
+            <p id="resume">Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit. Proin tincidunt tincidunt erat, id molestie ex mollis at.</p>
 
             <div>button</div>
 

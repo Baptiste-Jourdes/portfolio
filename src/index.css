@@ -15,6 +15,7 @@
 
   --special-color: #6284FF;
   --fond2-color: #DEDEDE;
+  --percent-navbar:15%;
 }
 
 a {
@@ -85,8 +86,8 @@ body{
 html {   scroll-behavior: smooth; }
 
 .content{
-  width: 80%;
-  margin-left: 20%;
+  width: calc(100% - var(--percent-navbar));
+  margin-left: var(--percent-navbar);
 }
 
 .separator{
