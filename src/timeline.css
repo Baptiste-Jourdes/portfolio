@@ -1,0 +1,159 @@
+* { box-sizing: border-box; }
+
+:root {
+  --main-color: #212121;
+  --last-card-color: var(--special-color);
+  --card-text-color : var(--fond2-color);
+}
+
+[data-theme="dark"] {
+  --main-bg-color: red;
+}
+
+.box{
+  /*margin:0 10%;*/
+  /*height: 630px;*/
+  overflow: hidden;
+  /*padding: 10px 0 40px 60px*/
+}
+
+.box ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all 0.5s linear;
+  top:0
+}
+
+/*.box ul:last-of-type{top:80px}*/
+
+.box ul:before{
+  content: "";
+  /*display: block;*/
+  width: 0;
+  height: 100%;
+  border:1px dashed var(--main-color);
+  position: absolute;
+  top:0;
+  /*left:30px*/
+  left:50%;
+}
+
+.box ul li{
+  margin: 20px 60px 60px;
+  position: relative;
+  padding: 10px 20px;
+  background: var(--main-color);
+  color:var(--card-text-color);
+  border-radius: 10px;
+  line-height: 20px;
+  width: 35%
+}
+
+.box ul li:nth-child(odd){
+  margin-left: auto;
+  margin-right: calc(50% + 28.1px);
+}
+
+.box ul li:nth-child(even){
+  margin-left: calc(50% + 30px);
+}
+
+
+.box ul li > span{
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border:1px solid var(--main-color);
+  position: absolute;
+  top:0;
+  left:-30px
+}
+
+.box ul li:nth-child(odd) > span{
+  left:auto;
+  right:-30px;
+}
+
+.box ul li > span:before,.box ul li > span:after{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background:#3B3B3B;
+  border:2px solid var(--main-color);
+  position: absolute;
+  left:-7.5px;
+}
+
+.box ul li > span:before{top:-10px}
+.box ul li > span:after{top:96%}
+
+.box ul li:nth-last-child(-n+1) > span:after{top:96%}
+
+.box .title{
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.box .info:first-letter{text-transform: capitalize;line-height: 1.7}
+
+.box .name{
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-style: italic;
+  text-align: right;
+  margin-right: 20px
+}
+
+
+.box .time span{
+  position: absolute;
+  left: -100px;
+  color:var(--main-color);
+  font-size:80%;
+  font-weight: bold;
+  right: calc(100% + 40px);
+  left: auto;
+  width: 100%;
+  text-align: right;
+}
+
+.box li:nth-child(odd) .time span{
+  left: calc(100% + 40px);
+  width: 100%;
+  text-align: left;
+}
+
+
+.box li .time span:first-child {top: -13px;}
+.box .time span{top:92%}
+
+.box li:first-child{
+  background-color: var(--last-card-color);
+}
+
+
+.box ul li:nth-child(n+2) > span{
+  border-color: var(--main-color);
+  color: var(--main-color);
+  }
+
+.box li:first-child > span , .box ul li:first-child > span:before,.box ul li:first-child > span:after{
+  border-color: var(--last-card-color);
+  background: #88A2FF;
+}
+
+.box li:first-child .time > span{
+  color: var(--last-card-color);
+}
+
+.box li:first-child > div{
+  color: var(--main-color);
+}
+

@@ -1,0 +1,11 @@
+.Navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: var(--fond2-color);
+    overflow: auto;
+    min-width: 80px;
+    position:fixed;
+    height: 100%;
+}
