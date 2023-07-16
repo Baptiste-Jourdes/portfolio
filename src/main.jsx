@@ -5,7 +5,7 @@ import './index.css'
 import Timeline from './timeline.jsx'
 import TimelineCard from './timeline.jsx'
 import NavBar from './navbar.jsx'
-import { Separator, Title } from './utils'
+import { Separator, NavSeparator, Title } from './utils'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

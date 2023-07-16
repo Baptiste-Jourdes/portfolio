@@ -11,6 +11,17 @@ function Separator() {
 
 }
 
+function NavSeparator() {
+
+    return (
+
+        <div class="separator little">
+        </div>
+
+    )
+
+}
+
 function Title(props) {
 
     return (
@@ -25,4 +36,5 @@ function Title(props) {
 }
 
 export {Separator}
+export {NavSeparator}
 export {Title}
