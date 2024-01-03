@@ -4,7 +4,7 @@ function Separator() {
 
     return (
 
-        <div class="separator">
+        <div className="separator">
         </div>
 
     )
@@ -15,7 +15,7 @@ function NavSeparator() {
 
     return (
 
-        <div class="separator little">
+        <div className="separator little">
         </div>
 
     )
@@ -26,9 +26,23 @@ function Title(props) {
 
     return (
 
-        <div id={props.anchor} class="sectionTitle">
+        <div id={props.anchor} className="sectionTitle AnchorSection">
             <div></div>
             <span>{props.text}</span>
+        </div>
+
+    )
+
+}
+
+function SkillTitle(props) {
+
+    return (
+
+        <div id={props.anchor} className="sectionTitle skillTitle">
+            <div></div>
+            <span>{props.text}</span>
+            <div></div>
         </div>
 
     )
@@ -38,3 +52,4 @@ function Title(props) {
 export {Separator}
 export {NavSeparator}
 export {Title}
+export {SkillTitle}

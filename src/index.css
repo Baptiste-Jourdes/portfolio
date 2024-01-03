@@ -1,23 +1,44 @@
-:root {
+
+
+/*kill the transitions on any descendant elements of .notransition*/
+*{
+  transition: none;
+}
+
+body.loaded{
+* {transition: color 0.11s, background-color 0.5s;}
+}
+
+:root{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  --special-color: #6284FF;
-  --fond-color: #ECECEC;
-  --fond2-color: #DEDEDE;
-  --percent-navbar:15%;
 }
+  :root[data-theme="light"] {
+    --special-color: #6284FF;
+    --fond-color: #ECECEC;
+    --fond2-color: #DEDEDE;
+    --percent-navbar: 15%;
+    --main-color: #212121;
+  }
+
+:root[data-theme="dark"] {
+  --special-color: #A5B8FD;
+  --fond-color: #212121;
+  --fond2-color: #37393F;
+  --percent-navbar: 15%;
+  --main-color: #D9D9D9;
+}
+
 
 a {
   font-weight: 500;
@@ -25,7 +46,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--special-color);
 }
 
 body {
@@ -72,7 +93,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
 */
+
+
 
 #root {
   width: 100%;
@@ -118,6 +142,7 @@ html {   scroll-behavior: smooth; }
 
 .sectionTitle > span{
   margin-left: 5px;
+  margin-right: 5px;
 
   font-family: sans-serif;
   font-size: 22px;
@@ -125,4 +150,14 @@ html {   scroll-behavior: smooth; }
   font-weight: bold;
   line-height: normal;
 
+}
+
+.sectionTitle.skillTitle{
+  margin:auto;
+  display:flex;
+  justify-content: center;
+}
+
+.sectionTitle.skillTitle > div{
+  margin: 0;
 }

@@ -5,12 +5,13 @@ function TimelineCard(props) {
     return (
                 <li>
                     <span></span>
-                    <div class="title">{props.title}</div>
-                    <div class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-                    <div class="name">-</div>
-                    <div class="time">
-                        <span>{props.date1}</span>
+                    <div className="title">{props.title}</div>
+                    <div className="name">{props.name}</div>
+                    <div className="info">{props.desc}</div>
+                    <div className="localisation">{props.loc}</div>
+                    <div className="time">
                         <span>{props.date2}</span>
+                        <span>{props.date1}</span>
                         
                     </div>
                 </li>
