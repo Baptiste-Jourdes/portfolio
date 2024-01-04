@@ -1,0 +1,14 @@
+
+:root[data-theme="light"] {
+    --projet-fond:#DEDEDE;
+}
+
+:root[data-theme="dark"] {
+    --projet-fond:#37393F;
+}
+
+.Apropos{
+    display:block;
+    margin:auto;
+    width: 82%;
+}

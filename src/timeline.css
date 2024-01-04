@@ -2,16 +2,20 @@
 
 :root[data-theme="dark"] {
   --last-card-color: var(--special-color);
-  --card-text-color : #212121;
-  --card-color : #D9D9D9;
   --dot-color: #88A2FF;
+
+  --last-text-color : #212121;
+  --card-text-color : var(--main-color);
+  --card-color : var(--fond2-color);
 }
 
 :root[data-theme="light"] {
   --last-card-color: var(--special-color);
-  --card-text-color : var(--fond2-color);
-  --card-color : #212121;
   --dot-color: #88A2FF;
+
+  --last-text-color : #212121;
+  --card-text-color : var(--main-color);
+  --card-color : #D9D9D9;
 }
 
 .box{
@@ -21,12 +25,12 @@
   /*padding: 10px 0 40px 60px*/
 }
 
+
 .box ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   position: relative;
-  transition: all 0.5s linear;
   top:0
 }
 
@@ -37,7 +41,7 @@
   /*display: block;*/
   width: 0;
   height: 100%;
-  border:1px dashed var(--card-color);
+  border:1px dashed var(--card-text-color);
   position: absolute;
   top:0;
   /*left:30px*/
@@ -117,7 +121,6 @@
 
 .box .name{
   margin-top: 5px;
-  text-transform: capitalize;
   font-style: italic;
   text-align: left;
   font-size: 13px;
@@ -170,6 +173,58 @@
 }
 
 .box li:first-child > div{
-  color: var(--card-text-color);
+  color: var(--last-text-color);
 }
 
+@media (max-width: 950px) {
+  .box ul li{
+    width: 45%;
+  }
+}
+
+@media (max-width: 950px) {
+  .box li:nth-child(odd) .time span, .box li:nth-child(even) .time span{
+    left: calc(50% + 10px);
+    text-align: left;
+
+  }
+
+
+
+  .box li .time span:first-child {top: -16px;}
+
+  .box ul li:nth-child(odd) > span, .box ul li:nth-child(even) > span{
+    left:auto;
+    right:50%;
+  }
+  .box ul li > span {
+    height: 115%;
+    top: -9px;
+    z-index: -1;
+  }
+
+
+  .box .time span {
+    top: 100%;
+  }
+
+  .box li .time span:first-child {
+    top: -20px;
+  }
+
+  .box ul:before {
+    left: calc(49.8%);
+    z-index: -2;
+  }
+  .box ul li:nth-child(odd) , .box ul li:nth-child(even) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box ul li {
+    width: 90%;
+  }
+  }
+
+
+
+}

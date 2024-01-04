@@ -27,6 +27,12 @@
     display:flex;
     padding: 20px;
 }
+@media (max-width: 700px) {
+    #project-card-fond{
+        width: 90%;
+    }
+}
+
 
 .project-card-left{
     width: 50%;
@@ -64,7 +70,7 @@
 
 .project-tag{
     border-radius: 10px;
-    color: var(--tag-text-color, #212121);
+    color: #000000;
     font-size: 12px;
     font-style: normal;
     font-weight: 800;

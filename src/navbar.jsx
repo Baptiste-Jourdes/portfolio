@@ -18,7 +18,6 @@ function NavBar() {
 
 
     useEffect(() => {
-        console.log("toggel")
         window.localStorage.setItem('dark-mode', JSON.stringify(dark));
     }, [dark]);
 
@@ -28,8 +27,7 @@ function NavBar() {
         <div className="Navbar">
             <p id="name">JOURDES <br></br>Baptiste</p>
 
-            <p id="resume">Lorem ipsum dolor sit amet,
-             consectetur adipiscing elit. Proin tincidunt tincidunt erat, id molestie ex mollis at.</p>
+            <p id="resume">Actuellement étudiant en double-diplôme à la maîtrise en génie logiciel spécialisé dans les systèmes embarqués</p>
 
             <div className="contact">
                 <button className="circle" title={linkedin} onClick={() => {window.open(linkedin);}}>
@@ -56,7 +54,7 @@ function NavBar() {
 
             <div id={"title"}>
                 <a href={"#apropos"}>A Propos</a>
-                <a href={"#diplomes"}>Dîplomes</a>
+                <a href={"#formations"}>Formations</a>
                 <a href={"#projets"}>Projets</a>
                 <a href={"#competences"}>Compétences</a>
             </div>

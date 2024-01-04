@@ -1,3 +1,11 @@
+:root[data-theme="light"] {
+    --nav-color: #cbcbcb;
+}
+
+:root[data-theme="dark"] {
+    --nav-color: #2e2f36;
+}
+
 .Navbar{
     list-style-type: none;
     margin: 0;
@@ -9,6 +17,7 @@
     position:fixed;
     height: 100%;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
 }
 
 #name{
@@ -89,7 +98,7 @@ span#contact{
     font-style: normal;
     font-weight:  600;
     line-height: normal;
-    color: #323232;
+    color: #000000;
 }
 
 button#contact{
@@ -134,4 +143,24 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.Navbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.Navbar::-webkit-scrollbar-track {
+    background: var(--fond2-color);
+}
+
+/* Handle */
+.Navbar::-webkit-scrollbar-thumb {
+    background: var(--nav-color);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.Navbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

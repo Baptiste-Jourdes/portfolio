@@ -28,7 +28,7 @@ body.loaded{
     --fond-color: #ECECEC;
     --fond2-color: #DEDEDE;
     --percent-navbar: 15%;
-    --main-color: #212121;
+    --main-color: #000000;
   }
 
 :root[data-theme="dark"] {
@@ -36,7 +36,7 @@ body.loaded{
   --fond-color: #212121;
   --fond2-color: #37393F;
   --percent-navbar: 15%;
-  --main-color: #D9D9D9;
+  --main-color: #ffffff;
 }
 
 

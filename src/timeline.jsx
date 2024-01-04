@@ -10,7 +10,7 @@ function Timeline() {
                 <TimelineCard
                     title = "Maîtrise en Génie Logiciel"
                     name = "ETS - Ecole de Technologie Supérieure"
-                    desc ="Co-Diplomation"
+                    desc ="Double-Diplomation"
                     date1 = "Septembre 2023"
                     date2 = "prévu en août 2025"
                     loc="Montréal - CANADA"
@@ -21,7 +21,7 @@ function Timeline() {
                     name = "ENSIM - École Nationale Supérieure d'Ingénieurs du Mans"
                     desc= "Spécialité : Architecture des Systèmes Temps-Réel et Embarqués (ASTRE)"
                     date1 = "Septembre 2021"
-                    date2 = "Co-diplomation"
+                    date2 = "Double-diplomation"
                     loc="Le Mans - FRANCE"
 
                 />

@@ -7,14 +7,16 @@ import Projects from './projects.jsx'
 import Skills from './skills.jsx'
 import NavBar from './navbar.jsx'
 import { Separator, Title, SkillTitle } from './utils'
+import Apropos from "./apropos.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <NavBar/>
     <div className="content">
       <Title text = "A Propos" anchor="apropos"/>
+      <Apropos></Apropos>
       <Separator/>
-      <Title text = "Diplômes" anchor="diplomes"/>
+      <Title text = "Formations" anchor="formations"/>
       <Timeline />
       <Separator/>
       <Title text = "Projets" anchor="projets"/>
