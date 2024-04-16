@@ -48,7 +48,7 @@
     margin-top: 65px;
 }
 
-button{
+.Navbar button{
     background-color: var(--special-color);
     border: none;
     border-radius: 10px;
@@ -62,7 +62,7 @@ button{
     transition: outline 0.25s;
 }
 
-button:hover{
+.Navbar button:hover{
     cursor: grab;
     outline: 3px solid var(--special-color);
 }
@@ -76,7 +76,7 @@ svg{
     fill: var(--fond-color);
 }
 
-button > span{
+.Navbar button > span{
     display:block;
     font-size: 15px;
     font-style: normal;

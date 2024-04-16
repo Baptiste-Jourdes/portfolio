@@ -74,7 +74,7 @@ function NavBar() {
             />
             </div>
 
-            <div>langue</div>
+            <div></div>
 
         </div>
 

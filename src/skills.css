@@ -5,14 +5,15 @@
 .skills-box{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     margin: 30px auto 70px;
     gap: 5%;
-    row-gap: 20px;
+    row-gap: 50px;
     flex-shrink: 0;
     width: 80%;
     overflow-wrap: normal;
     flex-wrap: wrap;
+    white-space: pre-line;
 }
 
 #skill-one{
@@ -21,14 +22,22 @@
     //background: var(--projet-fond-day, #DEDEDE);
     display:block;
     transition: width 0.25s;
+    text-align: center;
 }
 
-#skill-one > img {
+#skill-one svg {
     display:block;
     margin:auto;
-    width:40%;
+    width:25%;
     margin-bottom: 10px;
     transition: all 0.25s;
+    height: fit-content;
+
+}
+
+#skill-one svg > g {
+    fill : var(--main-color, #DEDEDE);
+    transition: fill 0.25s;
 }
 
 #skill-one > h1 {
@@ -55,8 +64,8 @@
     span, h1{
         color: var(--special-color);
     }
-    img {
-        width: calc(40% + 5px);
+    svg {
+        width: calc(25% + 5px);
         margin-bottom: 5px;
     }
 

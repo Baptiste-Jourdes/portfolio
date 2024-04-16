@@ -1,33 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReactDOM from 'react-dom/client'
-//import App from './App.jsx'
+import App from './App.jsx'
 import './index.css'
 import Timeline from './timeline.jsx'
 import Projects from './projects.jsx'
-import Skills from './skills.jsx'
+import Skills_primary from './skills_primary.jsx'
+import Skills_secondary from './skills_secondary.jsx'
 import NavBar from './navbar.jsx'
 import { Separator, Title, SkillTitle } from './utils'
 import Apropos from "./apropos.jsx";
+import Modal from "./Components/Modal.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <NavBar/>
-    <div className="content">
-      <Title text = "A Propos" anchor="apropos"/>
-      <Apropos></Apropos>
-      <Separator/>
-      <Title text = "Formations" anchor="formations"/>
-      <Timeline />
-      <Separator/>
-      <Title text = "Projets" anchor="projets"/>
-      <Projects />
-      <Separator/>
-      <Title text = "Compétences" anchor="competences"/>
-      <SkillTitle text = "Principales"></SkillTitle>
-      <Skills />
-      <SkillTitle text = "Secondaires"></SkillTitle>
-      <Skills />
-    </div>
+      <App></App>
   </React.StrictMode>,
 )
 
@@ -43,6 +29,15 @@ window.onload = (event) => {
     window.scrollTo({top: y-20, behavior: 'smooth'});
   }
   document.body.classList.add('loaded');
+
+  /*const element = document.getElementsByClassName("ModalOpen");
+  console.log(element);
+  Array.from(element).forEach(function(elt){
+      elt.addEventListener("click", function(event){
+        console.log(event.target);
+        CloseModal();
+      })
+  });*/
 
 };
 
