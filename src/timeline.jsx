@@ -12,7 +12,7 @@ function Timeline() {
                     name = "ETS - Ecole de Technologie Supérieure"
                     desc ="Double-Diplomation"
                     date1 = "Septembre 2023"
-                    date2 = "prévu en août 2025"
+                    date2 = "Août 2025"
                     loc="Montréal - CANADA"
 
                 />
@@ -31,7 +31,7 @@ function Timeline() {
                     desc = "Génie Electrique et Informatique Industrielle (GEII),
                     Spécialité : informatique embarquée"
                     date1 = "Septembre 2019"
-                    date2 = "juin 2021"
+                    date2 = "Juin 2021"
                     loc="Brive-la-Gaillarde - FRANCE"
 
                 />

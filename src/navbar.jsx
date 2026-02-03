@@ -1,7 +1,7 @@
 import './navbar.css'
 import linkedinLogo from './assets/linkedin.svg'
 import gitLogo from './assets/github.svg'
-import CV from '/CV_JOURDES_Baptiste.pdf'
+import CV from '/CV_B_JOURDES_FR.pdf'
 
 import { NavSeparator } from './utils'
 import Switch from "./switch.jsx";
@@ -27,7 +27,7 @@ function NavBar() {
         <div className="Navbar">
             <p id="name">JOURDES <br></br>Baptiste</p>
 
-            <p id="resume">Actuellement étudiant en double-diplôme à la maîtrise en génie logiciel spécialisé dans les systèmes embarqués</p>
+            <p id="resume">Ingénieur junior en informatique systèmes embarqués</p>
 
             <div className="contact">
                 <button className="circle" title={linkedin} onClick={() => {window.open(linkedin);}}>
@@ -35,7 +35,7 @@ function NavBar() {
                     <path d="M10.4597 23.0028V11.531H6.81559V23.0028H10.4597ZM8.63812 9.96383C9.9089 9.96383 10.6999 9.08293 10.6999 7.9821C10.6762 6.85645 9.90895 6 8.66224 6C7.41573 6 6.60059 6.85646 6.60059 7.9821C6.60059 9.08298 7.39139 9.96383 8.61434 9.96383H8.63801H8.63812ZM12.4767 23.0028H16.1209V16.5964C16.1209 16.2535 16.1445 15.911 16.2408 15.6659C16.5042 14.9809 17.1038 14.2714 18.1105 14.2714C19.4291 14.2714 19.9567 15.3234 19.9567 16.8656V23.0027H23.6006V16.4249C23.6006 12.9012 21.8028 11.2617 19.4051 11.2617C17.4393 11.2617 16.5761 12.4115 16.0966 13.1946H16.1209V11.5308H12.4768C12.5246 12.6072 12.4768 23.0026 12.4768 23.0026L12.4767 23.0028Z"/>
                     </svg>
                     </button>
-                <button title={CV} onClick={() => {window.open("CV_JOURDES_Baptiste.pdf");}}>
+                <button title={CV} onClick={() => {window.open("CV_B_JOURDES_FR.pdf");}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
                     <path d="M5.79883 24H23.7988V21.8824H5.79883V24ZM23.7988 12.3529H18.656V6H10.9417V12.3529H5.79883L14.7988 19.7647L23.7988 12.3529Z"/>
                     </svg>
